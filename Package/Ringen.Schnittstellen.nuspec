@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Ringen.Schnittstellen</id>
+    <title>Ringen.Schnittstellen</title>	
+    <version>1.0.0</version>
+    <authors>Alexander Badewitz</authors>
+    <owners>http://www.BRV-Ringen.de</owners>
+    <license type="file">LICENSE.md</license>
+    <projectUrl>https://github.com/BrvRingen/Ringen.Schnittstellen</projectUrl>
+    <icon>Icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</summary>
+    <description>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</description>
+    <releaseNotes>INIT</releaseNotes>
+    <copyright>Copyright 2021, BRV Ringen</copyright>
+    <tags>BRV, Ringen, Mannschaftskämpfe, Interfaces, Schnittstellen</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.8">
+        <!--dependency id="SampleDependency" version="1.0" /-->
+      </group>
+    </dependencies>
+  </metadata>
+      <files>
+        <file src="..\LICENSE.md" target="" />
+        <file src="..\README.txt" target="" />
+        <file src="Icon.png" target="" />
+		<file src="lib\net48\*.*" target="lib\net48" />
+		<!--file src="lib\netcoreapp3.1\*.*" target="lib\netcoreapp3.1" /-->
+    </files>
+</package>
