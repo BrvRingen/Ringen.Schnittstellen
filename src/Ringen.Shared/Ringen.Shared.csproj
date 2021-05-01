@@ -1,40 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="$(SolutionDir)Configuration.targets" />
-  <PropertyGroup>
-    <ProjectGuid>{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}</ProjectGuid>
-    <RootNamespace>Ringen.Shared</RootNamespace>
-    <AssemblyName>Ringen.Shared</AssemblyName>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Security" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationElemente\CredentialConfigurationElement.cs" />
-    <Compile Include="ConfigurationElemente\KeyValueStringConfigurationElement.cs" />
-    <Compile Include="ConfigurationElemente\ValueIntConfigurationElement.cs" />
-    <Compile Include="ConfigurationElemente\ValueStringConfigurationElement.cs" />
-    <Compile Include="GlobaleVariablen.cs" />
-    <Compile Include="Helpers\PasswordHelper.cs" />
-    <Compile Include="Helpers\ValidationHelper.cs" />
-    <Compile Include="Models\CompetitionInfos.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ProjectReference Include="..\Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj">
-      <Project>{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}</Project>
-      <Name>Ringen.Schnittstellen.Contracts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
 </Project>

@@ -3,7 +3,7 @@
   <metadata>
     <id>Ringen.Schnittstellen</id>
     <title>Ringen.Schnittstellen</title>	
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <authors>Alexander Badewitz</authors>
     <owners>http://www.BRV-Ringen.de</owners>
     <license type="file">LICENSE.md</license>
@@ -12,12 +12,31 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</summary>
     <description>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</description>
-    <releaseNotes>INIT</releaseNotes>
+    <releaseNotes>Change to .NETStandard</releaseNotes>
     <copyright>Copyright 2021, BRV Ringen</copyright>
     <tags>BRV, Ringen, Mannschaftskämpfe, Interfaces, Schnittstellen</tags>
     <dependencies>
-      <group targetFramework=".NETFramework4.8">
-        <!--dependency id="SampleDependency" version="1.0" /-->
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="MonkeyCache.FileStore" version="1.5.2" />
+        <dependency id="Xam.Plugin.Connectivity" version="3.2.0" />
+        <dependency id="Flurl" version="3.0.1" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+        <dependency id="Ninject" version="3.3.4" />
+        <dependency id="NLog" version="4.7.8" />
+        <dependency id="Microsoft.AspNetCore.Mvc.DataAnnotations" version="2.2.0" />
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
+        <dependency id="System.Security.Cryptography.ProtectedData" version="5.0.0" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="MonkeyCache.FileStore" version="1.5.2" />
+        <dependency id="Xam.Plugin.Connectivity" version="3.2.0" />
+        <dependency id="Flurl" version="3.0.1" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+        <dependency id="Ninject" version="3.3.4" />
+        <dependency id="NLog" version="4.7.8" />
+        <dependency id="Microsoft.AspNetCore.Mvc.DataAnnotations" version="2.2.0" />
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
+        <dependency id="System.Security.Cryptography.ProtectedData" version="5.0.0" />
       </group>
     </dependencies>
   </metadata>
@@ -25,7 +44,7 @@
         <file src="..\LICENSE.md" target="" />
         <file src="..\README.txt" target="" />
         <file src="Icon.png" target="" />
-		<file src="lib\net48\*.*" target="lib\net48" />
-		<!--file src="lib\netcoreapp3.1\*.*" target="lib\netcoreapp3.1" /-->
+		<file src="lib\netstandard2.0\*.*" target="lib\netstandard2.0" />
+		<file src="lib\netstandard2.1\*.*" target="lib\netstandard2.1" />
     </files>
 </package>

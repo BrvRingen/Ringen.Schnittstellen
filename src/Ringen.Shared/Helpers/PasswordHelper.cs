@@ -1,16 +1,19 @@
 ﻿using System;
+using System.Text;
 using System.Security;
+using System.Security.Cryptography;
+using System.Runtime.InteropServices;
 
 namespace Ringen.Shared.Helpers
 {
     public static class PasswordHelper
     {
-        static byte[] entropy = System.Text.Encoding.Unicode.GetBytes("#5!b.i#ivd9pdSc*zSgJ8Sv2w#o:CrM@Fgy");
+        static byte[] entropy = Encoding.Unicode.GetBytes("#5!b.i#ivd9pdSc*zSgJ8Sv2w#o:CrM@Fgy");
 
-        public static string EncryptString(System.Security.SecureString input)
+        public static string EncryptString(SecureString input)
         {
-            byte[] encryptedData = System.Security.Cryptography.ProtectedData.Protect(
-                System.Text.Encoding.Unicode.GetBytes(ToInsecureString(input)),
+            byte[] encryptedData = ProtectedData.Protect(
+                Encoding.Unicode.GetBytes(ToInsecureString(input)),
                 entropy,
                 System.Security.Cryptography.DataProtectionScope.CurrentUser);
             return Convert.ToBase64String(encryptedData);
@@ -21,12 +24,12 @@ namespace Ringen.Shared.Helpers
             if (string.IsNullOrEmpty(encryptedData))
                 return new SecureString();
 
-            byte[] decryptedData = System.Security.Cryptography.ProtectedData.Unprotect(
+            byte[] decryptedData = ProtectedData.Unprotect(
                 Convert.FromBase64String(encryptedData),
                 entropy,
-                System.Security.Cryptography.DataProtectionScope.CurrentUser);
+                DataProtectionScope.CurrentUser);
 
-            return ToSecureString(System.Text.Encoding.Unicode.GetString(decryptedData));
+            return ToSecureString(Encoding.Unicode.GetString(decryptedData));
         }
 
         public static SecureString ToSecureString(string input)
@@ -46,14 +49,14 @@ namespace Ringen.Shared.Helpers
                 return string.Empty;
 
             string returnValue = string.Empty;
-            IntPtr ptr = System.Runtime.InteropServices.Marshal.SecureStringToBSTR(input);
+            IntPtr ptr = Marshal.SecureStringToBSTR(input);
             try
             {
-                returnValue = System.Runtime.InteropServices.Marshal.PtrToStringBSTR(ptr);
+                returnValue = Marshal.PtrToStringBSTR(ptr);
             }
             finally
             {
-                System.Runtime.InteropServices.Marshal.ZeroFreeBSTR(ptr);
+                Marshal.ZeroFreeBSTR(ptr);
             }
             return returnValue;
         }
