@@ -1,9 +1,9 @@
-﻿using Ringen.Schnittstelle.Caching.Models;
-using Ringen.Schnittstelle.Caching.Services;
+﻿using Ringen.Schnittstellen.Caching.Models;
+using Ringen.Schnittstellen.Caching.Services;
 using Ringen.Schnittstellen.Contracts.Factories;
 using Ringen.Schnittstellen.Contracts.Services;
 
-namespace Ringen.Schnittstelle.Caching.Factories
+namespace Ringen.Schnittstellen.Caching.Factories
 {
     public class ServiceErstellerMitCache : IServiceErsteller
     {

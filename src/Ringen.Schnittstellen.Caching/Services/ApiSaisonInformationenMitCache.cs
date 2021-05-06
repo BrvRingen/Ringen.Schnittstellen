@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Ringen.Schnittstelle.Caching.Models;
+using Ringen.Schnittstellen.Caching.Models;
 using Ringen.Schnittstellen.Contracts.Models;
 using Ringen.Schnittstellen.Contracts.Services;
 
-namespace Ringen.Schnittstelle.Caching.Services
+namespace Ringen.Schnittstellen.Caching.Services
 {
     internal class ApiSaisonInformationenMitCache : IApiSaisonInformationen
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using MonkeyCache.FileStore;
 using Plugin.Connectivity;
 
-namespace Ringen.Schnittstelle.Caching
+namespace Ringen.Schnittstellen.Caching
 {
     public class ApiCache
     {
