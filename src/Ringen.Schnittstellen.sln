@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Contracts", "Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj", "{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Caching", "Ringen.Schnittstellen.Caching\Ringen.Schnittstellen.Caching.csproj", "{A2C1462F-F832-4F71-9909-D4A8BEF51986}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

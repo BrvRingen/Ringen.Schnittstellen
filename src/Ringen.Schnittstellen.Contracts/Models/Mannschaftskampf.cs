@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.AccessControl;
 using Ringen.Schnittstellen.Contracts.Models.Enums;
 
 namespace Ringen.Schnittstellen.Contracts.Models

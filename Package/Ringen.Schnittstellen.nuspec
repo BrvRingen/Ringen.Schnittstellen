@@ -3,7 +3,7 @@
   <metadata>
     <id>Ringen.Schnittstellen</id>
     <title>Ringen.Schnittstellen</title>	
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <authors>Alexander Badewitz</authors>
     <owners>http://www.BRV-Ringen.de</owners>
     <license type="file">LICENSE.md</license>
@@ -17,20 +17,8 @@
     <tags>BRV, Ringen, Mannschaftskämpfe, Interfaces, Schnittstellen</tags>
     <dependencies>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Microsoft.AspNetCore.Mvc.DataAnnotations" version="2.2.0" />
-        <dependency id="MonkeyCache.FileStore" version="1.5.2" />
-        <dependency id="NLog" version="4.7.9" />
-        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-        <dependency id="System.Security.Cryptography.ProtectedData" version="5.0.0" />
-        <dependency id="Xam.Plugin.Connectivity" version="3.2.0" />
       </group>
       <group targetFramework=".NETStandard2.1">
-        <dependency id="Microsoft.AspNetCore.Mvc.DataAnnotations" version="2.2.0" />
-        <dependency id="MonkeyCache.FileStore" version="1.5.2" />
-        <dependency id="NLog" version="4.7.9" />
-        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" />
-        <dependency id="System.Security.Cryptography.ProtectedData" version="5.0.0" />
-        <dependency id="Xam.Plugin.Connectivity" version="3.2.0" />
       </group>
     </dependencies>
   </metadata>
