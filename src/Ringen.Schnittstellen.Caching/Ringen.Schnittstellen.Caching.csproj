@@ -6,6 +6,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj" />
-    <ProjectReference Include="..\Ringen.Shared\Ringen.Shared.csproj" />
   </ItemGroup>
 </Project>

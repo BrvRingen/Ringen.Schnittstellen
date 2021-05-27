@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Contr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Caching", "Ringen.Schnittstellen.Caching\Ringen.Schnittstellen.Caching.csproj", "{A2C1462F-F832-4F71-9909-D4A8BEF51986}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Shared", "Ringen.Shared\Ringen.Shared.csproj", "{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http.Library", "Http.Library\Http.Library.csproj", "{32F34F12-4604-4D65-BAC9-C9E97D17F9CC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2C1462F-F832-4F71-9909-D4A8BEF51986}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4BDD0B5-8268-4E68-BE6A-EAD3485AD2B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32F34F12-4604-4D65-BAC9-C9E97D17F9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32F34F12-4604-4D65-BAC9-C9E97D17F9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32F34F12-4604-4D65-BAC9-C9E97D17F9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32F34F12-4604-4D65-BAC9-C9E97D17F9CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
