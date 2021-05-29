@@ -25,7 +25,7 @@
         <PackageDescription>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</PackageDescription>
         <RepositoryUrl>https://github.com/BrvRingen/Ringen.Schnittstellen</RepositoryUrl>
         <PackageProjectUrl>http://www.brv-ringen.de</PackageProjectUrl>
-        <PackageLicenseExpression>GNU</PackageLicenseExpression>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>BRV, Ringen, Mannschaftskämpfe, Interfaces, Schnittstellen</PackageTags>
 
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
