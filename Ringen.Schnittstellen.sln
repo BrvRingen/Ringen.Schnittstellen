@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Contracts", "Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj", "{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ringen.Schnittstellen.Contracts", "src\Ringen.Schnittstellen.Contracts\Ringen.Schnittstellen.Contracts.csproj", "{17D6DADE-EBE8-4B4A-9EDA-014395CF42A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

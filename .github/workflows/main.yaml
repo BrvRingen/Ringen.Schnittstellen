@@ -23,9 +23,9 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.7
 
     - name: Build solution
-      run: dotnet build --configuration Release src\Ringen.Schnittstellen.sln
+      run: dotnet build --configuration Release Ringen.Schnittstellen.sln
     - name: Create the package
-      run: dotnet pack --configuration Release --no-build src\Ringen.Schnittstellen.sln  -o Artifacts/Packages
+      run: dotnet pack --configuration Release --no-build Ringen.Schnittstellen.sln  -o Artifacts/Packages
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v2 
