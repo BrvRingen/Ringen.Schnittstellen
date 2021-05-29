@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>9</LangVersion>
         <IsPackable>false</IsPackable>
-		<OutputPath>..\..\Artifacts\Packages\lib\</OutputPath>
+		<!--OutputPath>..\..\Artifacts\Packages\lib\</OutputPath-->
     </PropertyGroup>
     <PropertyGroup>
         <Version>$(GitVersion_SemVer)</Version>
