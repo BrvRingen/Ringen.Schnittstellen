@@ -5,7 +5,6 @@
         <Nullable>enable</Nullable>
         <LangVersion>9</LangVersion>
         <IsPackable>false</IsPackable>
-		<!--OutputPath>..\..\Artifacts\Packages\lib\</OutputPath-->
     </PropertyGroup>
     <PropertyGroup>
         <Version>$(GitVersion_SemVer)</Version>
@@ -23,7 +22,7 @@
         <Company>BRV Ringen</Company>
         <Copyright>Copyright © $([System.DateTime]::Now.ToString(yyyy)) BRV Ringen</Copyright>
         <PackageDescription>Interfaces zu Plattformen die Daten für Mannschaftskämpfe bereitstellen.</PackageDescription>
-        <RepositoryUrl>https://github.com/BrvRingen/Ringen.Schnittstellen</RepositoryUrl>
+        <RepositoryUrl>https://github.com/BrvRingen/Ringen.Schnittstellen.Contracts</RepositoryUrl>
         <PackageProjectUrl>http://www.brv-ringen.de</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>BRV, Ringen, Mannschaftskämpfe, Interfaces, Schnittstellen</PackageTags>
