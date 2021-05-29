@@ -35,7 +35,7 @@ jobs:
     - name: Publish to nuget.org
       run: dotnet nuget push Artifacts/Packages/**/*.nupkg --api-key ${{secrets.NUGET_ORG_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
     - name: Publish to github packages
-      run: |
+      run:
         for f in Artifacts/Packages/*.nupkg
         do
           echo "Uploading package: $f"
