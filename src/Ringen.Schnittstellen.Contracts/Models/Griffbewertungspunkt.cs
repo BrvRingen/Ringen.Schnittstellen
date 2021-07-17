@@ -31,5 +31,22 @@ namespace Ringen.Schnittstellen.Contracts.Models
             Zeit = zeit;
             Punktzahl = punktzahl;
         }
+
+        public override string ToString()
+        {
+            switch (Typ)
+            {
+                case GriffbewertungsTyp.Punkt:
+                    return Punktzahl.ToString();
+                case GriffbewertungsTyp.Verwarnung:
+                    return "V";
+                case GriffbewertungsTyp.Aktivitaetszeit:
+                    return "A";
+                case GriffbewertungsTyp.Passiv:
+                    return "P";
+                default:
+                    return "";
+            }
+        }
     }
 }
