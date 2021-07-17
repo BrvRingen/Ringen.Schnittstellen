@@ -8,13 +8,13 @@ namespace Ringen.Schnittstellen.Contracts.Models
     /// </summary>
     public class Mannschaftskampf
     {
-        public string SaisonId { get; set; }
+        public string? SaisonId { get; set; }
 
-        public string WettkampfId { get; set; }
+        public string? WettkampfId { get; set; }
 
-        public string HeimMannschaft { get; set; }
+        public string? HeimMannschaft { get; set; }
 
-        public string GastMannschaft { get; set; }
+        public string? GastMannschaft { get; set; }
 
         public int HeimPunkte { get; set; } = 0;
 
@@ -30,16 +30,16 @@ namespace Ringen.Schnittstellen.Contracts.Models
 
         public int AnzahlZuschauer { get; set; } = 0;
 
-        public string Wettkampfstaette { get; set; }
+        public string? Wettkampfstaette { get; set; }
 
-        public string Schiedsrichter_Vorname { get; set; }
+        public string? Schiedsrichter_Vorname { get; set; }
 
-        public string Schiedsrichter_Nachname { get; set; }
+        public string? Schiedsrichter_Nachname { get; set; }
 
         public HeimGast Sieger { get; set; }
 
         public bool IstErgebnisGeprueft { get; set; } = false;
 
-        public string Kommentar { get; set; }
+        public string? Kommentar { get; set; }
     }
 }

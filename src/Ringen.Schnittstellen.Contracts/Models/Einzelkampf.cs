@@ -11,13 +11,13 @@ namespace Ringen.Schnittstellen.Contracts.Models
     {
         public int KampfNr { get; set; }
 
-        public string Gewichtsklasse { get; set; }
+        public string? Gewichtsklasse { get; set; }
 
         public Stilart Stilart { get; set; }
 
-        public Ringer HeimRinger { get; set; }
+        public Ringer? HeimRinger { get; set; }
 
-        public Ringer GastRinger { get; set; }
+        public Ringer? GastRinger { get; set; }
 
         public int HeimMannschaftswertung { get; set; }
 
@@ -29,8 +29,8 @@ namespace Ringen.Schnittstellen.Contracts.Models
 
         public TimeSpan Kampfdauer { get; set; }
 
-        public List<Griffbewertungspunkt> Wertungspunkte { get; set; }
+        public List<Griffbewertungspunkt> Wertungspunkte { get; set; } = new List<Griffbewertungspunkt>();
 
-        public string Kommentar { get; set; }
+        public string? Kommentar { get; set; }
     }
 }

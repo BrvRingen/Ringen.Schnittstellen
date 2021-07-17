@@ -4,7 +4,7 @@
     {
         public int Tabellenplatz { get; set; }
 
-        public string TeamId { get; set; }
+        public string? TeamId { get; set; }
 
         public int AnzahlSiege { get; set; }
 

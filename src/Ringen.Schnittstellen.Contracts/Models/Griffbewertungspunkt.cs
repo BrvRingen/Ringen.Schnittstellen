@@ -38,14 +38,16 @@ namespace Ringen.Schnittstellen.Contracts.Models
             {
                 case GriffbewertungsTyp.Punkt:
                     return Punktzahl.ToString();
-                case GriffbewertungsTyp.Verwarnung:
-                    return "V";
-                case GriffbewertungsTyp.Aktivitaetszeit:
-                    return "A";
-                case GriffbewertungsTyp.Passiv:
-                    return "P";
                 default:
-                    return "";
+                    return Typ.ToString().Substring(0, 1);
+            }
+        }
+
+        public string Value
+        {
+            get
+            {
+                return ToString();
             }
         }
     }

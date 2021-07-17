@@ -6,8 +6,8 @@
     /// </summary>
     public class Leistungsklasse
     {
-        public string SystemId { get; set; }
+        public string? SystemId { get; set; }
 
-        public string Bezeichnung { get; set; }
+        public string? Bezeichnung { get; set; }
     }
 }

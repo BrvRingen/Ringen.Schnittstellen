@@ -6,10 +6,10 @@
     /// </summary>
     public class Saison
     {
-        public string SaisonId { get; set; }
+        public string? SaisonId { get; set; }
 
-        public string Bezeichnung { get; set; }
+        public string? Bezeichnung { get; set; }
 
-        public string Ligenleiter { get; set; }
+        public string? Ligenleiter { get; set; }
     }
 }

@@ -6,7 +6,7 @@ namespace Ringen.Schnittstellen.Contracts.Models
     {
         public int KampfNr { get; set; }
 
-        public string Gewichtsklasse { get; set; }
+        public string? Gewichtsklasse { get; set; }
 
         public Stilart Stilart { get; set; }
     }
