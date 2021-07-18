@@ -8,7 +8,7 @@ namespace Ringen.Schnittstellen.Contracts.Models
     /// 1, 2, 4 und 5 Punkte
     /// BoutPoint
     /// </summary>
-    public class Griffbewertungspunkt
+    public class Griffbewertungspunkt : ICloneable
     {
         public HeimGast Fuer { get; set; }
 
@@ -49,6 +49,11 @@ namespace Ringen.Schnittstellen.Contracts.Models
             {
                 return ToString();
             }
+        }
+
+        public object Clone()
+        {
+            return MemberwiseClone();
         }
     }
 }
