@@ -26,14 +26,6 @@ jobs:
       run: dotnet build --configuration Release Ringen.Schnittstellen.Contracts.sln
     - name: Create the package
       run: dotnet pack --configuration Release --no-build Ringen.Schnittstellen.Contracts.sln  -o Artifacts/Packages
-
-    - name: SonarQube Quality Gate Check
-      # You may pin to the exact commit or the version.
-      # uses: SonarSource/sonarqube-quality-gate-action@15767f0e4eb489cfdd989dc717fa78c038d0de8a
-      uses: SonarSource/sonarqube-quality-gate-action@v1.0.0
-      with:
-       # Location of the scanner metadata report file
-       scanMetadataReportFile: # optional, default is .scannerwork/report-task.txt
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v2 
